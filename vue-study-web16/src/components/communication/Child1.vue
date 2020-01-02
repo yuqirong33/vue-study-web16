@@ -1,0 +1,26 @@
+<template>
+  <div>
+    <h2>child1</h2>
+    <p>{{msg}}</p>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    msg: {
+      type: String,
+      default: ""
+    }
+  },
+  mounted() {
+    this.$parent.$on("event-from-child2", msg => {
+      alert("child1:", msg);
+    });
+  },
+  methods: {
+    eat() {
+      alert("这就回家！");
+    }
+  }
+};
+</script>
