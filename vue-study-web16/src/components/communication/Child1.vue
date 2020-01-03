@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="$emit('some-event','msg from child1')">
     <h2>child1</h2>
     <p>{{msg}}</p>
   </div>

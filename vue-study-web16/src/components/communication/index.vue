@@ -10,6 +10,11 @@
 import Child1 from "@/components/communication/Child1.vue";
 import Child2 from "@/components/communication/Child2.vue";
 export default {
+  provide() {
+    return {
+      foo: "fooooooooooo"
+    };
+  },
   components: {
     Child1,
     Child2

@@ -4,7 +4,9 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Notice :title="title" :message="message"/> -->
     <!-- <SlotsCha></SlotsCha> -->
-    <communication></communication>
+    <!-- <communication></communication> -->
+    <!-- <FormExample></FormExample> -->
+    <ElementTest></ElementTest>
   </div>
 </template>
 
@@ -12,15 +14,18 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import Notice from "./components/Notice.vue";
 // import SlotsCha from "./components/slots/index";
-import Communication from "./components/communication/index";
-
+// import Communication from "./components/communication/index";
+// import FormExample from "./components/form/index";
+import ElementTest from "./components/form/ElementTest";
 export default {
   name: "app",
   components: {
     // HelloWorld
     // Notice,
     // SlotsCha,
-    Communication
+    // Communication
+    // FormExample,
+    ElementTest
   },
   data() {
     return {
